@@ -2,5 +2,6 @@ fastapi[standard]
 sqlmodel
 uvicorn[standard]
 python-dotenv
-pymysql
+pymysql 
+alembic
 

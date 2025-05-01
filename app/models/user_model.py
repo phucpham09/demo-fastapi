@@ -3,6 +3,7 @@ from sqlmodel import SQLModel, Field
 class UserBase(SQLModel):
     username: str = Field(index=True)
     email: str
+    password: str
 
 class User(UserBase, table=True):
     id: int | None = Field(primary_key=True, default=None)
